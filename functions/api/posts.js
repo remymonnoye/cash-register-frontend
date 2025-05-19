@@ -1,15 +1,8 @@
-export default {
-  async fetch(request, env) {
-    const { pathname } = new URL(request.url);
-
-    if (pathname === "/api/posts") {
-      // If you did not use `DB` as your binding name, change it here
-      const { results } = await env.cashregisterdb.prepare( "SELECT * FROM Customers", ).all();
-      return Response.json(results);
-    }
-
-    return new Response(
-      "Call /api/beverages to see everyone who works at Bs Beverages",
-    );
-  },
-};
+// This function is called when a GET request is made to the /api/posts endpoint²
+export async function onRequestGet(context) {
+  // Remplace "DB" par le nom de ton binding si besoin (ex: cashregisterdb)
+  const { results } = await context.env.cashregisterdb
+    .prepare("SELECT * FROM Customers")
+    .all();
+  return Response.json(results);
+}
