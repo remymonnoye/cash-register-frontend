@@ -6,14 +6,13 @@ import Boissons from "./components/boissons";
 
 function App() {
   return (
-    <Router>
+    
       <Box>
-        {Navbar()}
-      </Box>
+        <Navbar />
       <Routes>
         <Route path="/" element={<Boissons />} />
       </Routes>
-    </Router>
+    </Box>
   );
 }
 
