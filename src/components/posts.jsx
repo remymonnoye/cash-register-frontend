@@ -15,7 +15,7 @@ const Posts = () => {
         setLoading(false);
         return;
       }
-      console.log("Response status:", resp.json());
+      
       const postsResp = await resp.json();
       if(!postsResp || postsResp.length === 0) {
         setError("No posts found");
