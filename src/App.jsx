@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Posts />} />
-      <Route path="api/posts/:id" element={<Post />} />
+      <Route path="posts/:id" element={<Post />} />
     </Routes>
   );
 }

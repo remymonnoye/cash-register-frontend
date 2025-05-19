@@ -1,5 +1,5 @@
 import posts from "./post/data";
 
-export function onRequestget(){
+export function onRequestGet(){
     return Response.json(posts);
 }
