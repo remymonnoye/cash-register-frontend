@@ -14,7 +14,7 @@ function AddDrink() {
       categorie
     };
 
-    fetch('/api/boissons', {
+    fetch('/api/adddrinks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
