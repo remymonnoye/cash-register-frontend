@@ -42,7 +42,7 @@ const Posts = () => {
       {posts.map((post) => (
        <div key={post.id}>
           <h2>
-            <Link to={`/posts/${post.id}`}>{post.title}</Link>
+            yes you can
           </h2>
         </div>
       ))}
