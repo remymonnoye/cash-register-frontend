@@ -42,7 +42,9 @@ const Posts = () => {
       {posts.map((post) => (
        <div key={post.id}>
           <h2>
-            yes you can
+            {post.nom}
+            {post.prix} €
+            {post.categorie}
           </h2>
         </div>
       ))}
