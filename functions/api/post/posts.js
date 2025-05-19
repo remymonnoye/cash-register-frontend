@@ -1,4 +1,4 @@
-import posts from "./post/data";
+import posts from "./data";
 
 export function onRequestget(){
     return Response.json(posts);
