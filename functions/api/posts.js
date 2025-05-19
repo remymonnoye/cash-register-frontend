@@ -1,6 +1,15 @@
-import posts from "./post/data";
+export default {
+  async fetch(request, env) {
+    const { pathname } = new URL(request.url);
 
-export async function onRequestGet(){
-    const {results} = await context.env.cashregisterdb.prepare("SELECT * FROM Boisson").all();
-    return Response.json(results)
-}
+    if (pathname === "/api/posts") {
+      // If you did not use `DB` as your binding name, change it here
+      const { results } = await env.cashregisterdb.prepare( "SELECT * FROM Customers", ).all();
+      return Response.json(results);
+    }
+
+    return new Response(
+      "Call /api/beverages to see everyone who works at Bs Beverages",
+    );
+  },
+};
