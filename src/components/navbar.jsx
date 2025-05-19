@@ -39,7 +39,7 @@ export default function CustomizedBreadcrumbs() {
           label="Home"
           icon={<HomeIcon fontSize="small" />}
         />
-        <StyledBreadcrumb component={Link} to="./components/adddrinks" label="Ajouter Boisson" />
+        <StyledBreadcrumb component={Link} to="/adddrinks" label="Ajouter Boisson" />
         <StyledBreadcrumb component={Link} to="" label="Commande"/>
         <StyledBreadcrumb component={Link} to="" label="Soft" />
         <StyledBreadcrumb component={Link} to="" label="Vin" />
