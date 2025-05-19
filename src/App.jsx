@@ -12,7 +12,7 @@ function App() {
         <Navbar />
       <Routes>
         <Route path="/" element={<Boissons />} />
-        <Route path="/components/adddrinks" element={<AddDrink />} />
+        <Route path="/adddrinks" element={<AddDrink />} />
       </Routes>
     </Box>
   );
