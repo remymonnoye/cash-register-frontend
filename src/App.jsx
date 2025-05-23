@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { Box } from "@mui/material";
 import Navbar from "./components/navbar";
 import Boissons from "./components/boissons";
@@ -14,6 +14,11 @@ function App() {
       <Box>
         {!hideNavbar && <Navbar />}
       <Routes>
+        <Route path="/" element={
+          localStorage.getItem("token") 
+          ? <Navigate to="/Boisson" replace />
+          : <Navigate to="/login" replace />
+        } />
         <Route path="/login" element={<Login />} />
         <Route path="/Boisson" element={
          <RequireAuth>
