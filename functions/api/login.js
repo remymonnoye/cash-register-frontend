@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { generateJWT } from './services/jwt';
 
 export async function onRequestPost(context){

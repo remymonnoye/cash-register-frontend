@@ -1,4 +1,4 @@
-import {requireAuth} from "../services/auth.js";
+import {requireAuth} from "./services/auth";
 // This function is called when a GET request is made to the /api/posts endpoint²
 export async function onRequestGet(context) {
   try{
