@@ -8,7 +8,7 @@ const boissons = () => {
   useEffect(() => {
     const getboissons = async () => {
       try{
-      const resp = await fetch("/api/boissons",{cache: "no-store"});
+      const resp = await fetch("/api/boissons",{cache: "no-store",headers: {"Authorization": `Bearer ${localStorage.getItem("token")}` }});
       if (resp.status !== 200) {
         setError("Failed to fetch boissons");
         setLoading(false);
