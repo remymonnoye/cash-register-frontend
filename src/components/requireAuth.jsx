@@ -6,6 +6,6 @@ export default function RequireAuth({ children }) {
     // Redirige vers /login si pas de token
     return <Navigate to="/login" replace />;
   }
-  // Sinon, affiche la page protégée
+  
   return children;
 }

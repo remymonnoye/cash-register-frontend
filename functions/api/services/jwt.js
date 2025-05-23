@@ -1,6 +1,6 @@
 import { SignJWT, jwtVerify } from "jose";
 
-const JWT_SECRET = 'votre_secret_tres_long_et_complexe';
+const JWT_SECRET = 'votre_secret_tres_long_et_complexe-pipi';
 
 export async function generateJWT(payload, expiresIn = "2h") {
   const secret = new TextEncoder().encode(JWT_SECRET);

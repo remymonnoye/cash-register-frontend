@@ -5,7 +5,6 @@ import Boissons from "./components/boissons";
 import AddDrink from "./components/adddrinks";
 import Login from "./components/login";
 import RequireAuth from "./components/RequireAuth";
-import "./App.css";
 
 function App() {
   const location = useLocation();
