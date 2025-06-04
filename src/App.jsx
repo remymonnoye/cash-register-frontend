@@ -1,10 +1,10 @@
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { Box } from "@mui/material";
-import Navbar from "./components/navbar";
-import Boissons from "./components/boissons";
-import AddDrink from "./components/adddrinks";
-import Login from "./components/login";
-import RequireAuth from "./components/RequireAuth";
+import Navbar from "./components/ui/navbar";
+import Boissons from "./components/drinks/boissons";
+import AddDrink from "./components/drinks/adddrinks";
+import Login from "./components/auth/login";
+import RequireAuth from "./components/auth/RequireAuth";
 
 function App() {
   const location = useLocation();
