@@ -1,6 +1,4 @@
 import { requireAuth} from "./services/auth";
-
-
 export async function onRequestPost(context) {
   try {
         // Vérifie l'authentification de l'utilisateur
