@@ -7,7 +7,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+#frontend
+cash-register-frontend/node_modules/
+cash-register-frontend/dist/
+
+#API
+api/node_modules/
+api/.env
+api/logs/
+
+
 dist
 dist-ssr
 *.local
